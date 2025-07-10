@@ -1,0 +1,48 @@
+<app-side-bar></app-side-bar>
+
+<div class="room-grid">
+  <div class="room-card" *ngFor="let room of allRooms">
+    <img [src]="room.type === 'AC' ? 'assets/ac-room.jpg' : 'assets/nonac-room.jpg'" alt="{{room.type}} Room" />
+    <div class="room-content">
+      <h3>{{ room.sharing }} Sharing</h3>
+      <p class="type-tag" [ngClass]="{'ac': room.type === 'AC', 'non-ac': room.type === 'Non-AC'}">{{ room.type }}</p>
+      <p class="cost">₹{{ room.cost }} / month</p>
+      <button class="deal-btn" (click)="enroll(room.sharing, room.type)">Grab Deal</button>
+    </div>
+  </div>
+</div>
+
+<div class="facility-grid">
+  <div class="facility-card" @fadeIn>
+    <h2>Room Facilities</h2>
+    <ul class="facility-list">
+      <li>🛏 Bed with Mattress & Pillow</li>
+      <li>🔐 Individual Wardrobe/Locker</li>
+      <li>🪑 Study Table & Chair</li>
+      <li>🚿 24x7 Water Supply</li>
+      <li>🌐 Wi-Fi/High-speed Internet</li>
+      <li>🧹 Daily Housekeeping</li>
+      <li>💡 Power Backup</li>
+      <li>🧺 Laundry Facility</li>
+      <li>🚰 RO Drinking Water</li>
+      <li>🧻 Attached/Shared Bathroom</li>
+      <li>🪟 Curtains & Ventilation</li>
+    </ul>
+  </div>
+
+  <div class="facility-card" @fadeIn>
+    <h2>Building & Hostel Facilities</h2>
+    <ul class="facility-list">
+      <li>🎥 CCTV Surveillance</li>
+      <li>🔒 Biometric/Smart Card Entry</li>
+      <li>🍽 Common Dining Area</li>
+      <li>🛋 Visitors Lounge</li>
+      <li>📶 High-Speed Internet in Common Areas</li>
+      <li>🩺 First Aid / On-call Doctor</li>
+      <li>🧼 Common Fridge & Microwave</li>
+      <li>🪜 Elevator Facility</li>
+      <li>🎮 Indoor Games / Lounge</li>
+      <li>🚗 Parking Area</li>
+    </ul>
+  </div>
+</div>
