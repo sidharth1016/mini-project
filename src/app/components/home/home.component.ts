@@ -126,6 +126,7 @@ export class HomeComponent {
   closePopup() {
     this.showContact = false;
   }
+  
 //   incrementVisits() {
 //   if (typeof window !== 'undefined' && window.localStorage) {
 //     const visits = localStorage.getItem('visits');

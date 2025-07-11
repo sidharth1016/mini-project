@@ -16,7 +16,7 @@
 <div *ngIf="selectedRoom" class="payment-section">
   <h2 class="payment-details">Payment for {{ selectedRoom.sharing }} Sharing ({{ selectedRoom.type }})</h2>
     <img [src]="selectedRoom.image" alt="{{ selectedRoom.sharing }} Sharing {{ selectedRoom.type }}" class="room-image" />
-
+ 
   <p>Total Cost: ₹{{ selectedRoom.cost }}</p>
 
   <div class="btns">

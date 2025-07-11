@@ -20,7 +20,7 @@ menuItems = [
   { image: 'https://i.pinimg.com/736x/5f/1a/d0/5f1ad0fa1f186f7040733e5665f93c83.jpg', title: 'Saturday' },
   { image: 'https://i.pinimg.com/736x/b0/0e/da/b00edab681de7380008fd28741614ec9.jpg', title: 'sunday' },
   // { image: 'https://i.pinimg.com/736x/4d/64/69/4d6469332c08595879ee5ceae4958882.jpg', title: 'Desserts' }
-];
+]; 
   selectedDay: string | null = null;
 
   menuData: any = {

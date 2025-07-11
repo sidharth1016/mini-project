@@ -45,3 +45,4 @@ selectedRoom: any = null;
     // here you can integrate Razorpay / Stripe / etc
   }
 }
+ 
